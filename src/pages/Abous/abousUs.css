@@ -1,0 +1,27 @@
+.wrapper {
+  width: 100%;
+  padding: 0px 25px;
+}
+.wrapper .first,
+.wrapper .second {
+  margin-top: 50px;
+  width: 100%;
+  font-size: 23px;
+}
+.wrapper .first h5,
+.wrapper .second h5 {
+  margin: 40px 0px;
+}
+.wrapper .third {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+.wrapper .third span {
+  background-color: yellow;
+  width: auto;
+  font-size: 23px;
+}
+.wrapper .first span {
+  background-color: yellow;
+}/*# sourceMappingURL=abousUs.css.map */

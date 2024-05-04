@@ -1,0 +1,36 @@
+.App {
+    width: 100%;
+    overflow: hidden !important;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.leftSidebar {
+    height: 100vh;
+    display: none;
+    position: fixed;
+    z-index: 0;
+    flex-direction: column;
+    background-color: #fff;
+
+}
+
+@media(max-width: 400px) {
+    .leftSidebar {
+        padding-top: 20px;
+        margin-top: 50px;
+    }
+
+    .leftSidebar h1 {
+        font-size: 20px;
+
+    }
+
+    .leftSidebar select option {
+        font-size: 20px;
+    }
+}

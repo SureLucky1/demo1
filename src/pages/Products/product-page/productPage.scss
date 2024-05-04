@@ -1,0 +1,690 @@
+.productDescription {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 70px;
+
+    .productIntro {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 50px;
+
+        .left {
+            width: 700px;
+            margin-right: 30px;
+
+            .img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .right {
+            width: 700px;
+            margin-left: 30px;
+
+            h1 {
+                font-size: 35px;
+            }
+
+            .sellingPrice {
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 200px;
+            }
+
+            .selectColor {
+                margin-top: 50px;
+
+                select {
+                    border: 1px solid gray;
+                    width: 300px;
+                    font-size: 25px;
+                }
+            }
+
+            .quantity {
+                margin-top: 50px;
+                width: fit-content;
+                height: auto;
+
+                div {
+                    border: 1px solid black;
+                    font-size: 25px;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    button {
+                        width: 65px;
+                        height: auto;
+                        border: none;
+                        font-size: 27px;
+                        background-color: transparent;
+
+                    }
+                }
+            }
+
+            .involve {
+                width: 500px;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 50px;
+
+                button:first-child {
+                    width: 200px;
+                    height: 60px;
+                    background-color: black;
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    border: none;
+                }
+
+                button:last-child {
+                    width: 200px;
+                    height: 60px;
+                    background-color: gray;
+                    color: white;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    border: none;
+                }
+            }
+
+            .contact {
+                width: 500px;
+                height: 60px;
+                background-color: white;
+                margin-top: 50px;
+                align-self: center;
+                border: 1px solid gray;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .second-Part {
+        margin-top: 40px;
+        display: block;
+
+        width: 100%;
+
+        .selectIntro {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 350px;
+            position: relative;
+
+
+            button {
+                width: 150px;
+                background-color: white;
+                border: none;
+                height: 50px;
+                color: gray;
+
+                &:hover {
+                    transition: 0.5s;
+                    color: black !important;
+                }
+            }
+        }
+
+        .details {
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border: 1px solid gray;
+            padding: 40px 20px;
+
+            .productDetails {
+                display: none;
+            }
+
+            .comment {
+                display: none;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .productDescription {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 70px;
+
+        .productIntro {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+
+            .left {
+                width: 50%;
+                margin-right: 30px;
+
+                .img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 50%;
+                margin-left: 30px;
+
+                h1 {
+                    font-size: 35px;
+                }
+
+                .sellingPrice {
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 200px;
+                }
+
+                .selectColor {
+                    margin-top: 50px;
+
+                    select {
+                        border: 1px solid gray;
+                        width: 300px;
+                        font-size: 25px;
+                    }
+                }
+
+                .quantity {
+                    margin-top: 50px;
+                    width: fit-content;
+                    height: auto;
+
+                    div {
+                        border: 1px solid black;
+                        font-size: 25px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        button {
+                            width: 65px;
+                            height: auto;
+                            border: none;
+                            font-size: 27px;
+                            background-color: transparent;
+
+                        }
+                    }
+                }
+
+                .involve {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+
+                    button:first-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: black;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+
+                    button:last-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: gray;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+
+                .contact {
+                    width: 100%;
+                    height: 60px;
+                    background-color: white;
+                    margin-top: 50px;
+                    align-self: center;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .second-Part {
+            margin-top: 40px;
+            display: block;
+
+            width: 100%;
+
+            .selectIntro {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 350px;
+                position: relative;
+
+
+                button {
+                    width: 150px;
+                    background-color: white;
+                    border: none;
+                    height: 50px;
+                    color: gray;
+
+                    &:hover {
+                        transition: 0.5s;
+                        color: black !important;
+                    }
+                }
+            }
+
+            .details {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid gray;
+                padding: 40px 20px;
+
+                .productDetails {
+                    display: none;
+                }
+
+                .comment {
+                    display: none;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .productDescription {
+
+
+        .productIntro {
+
+
+            .right {
+
+                h1 {
+                    font-size: 28px;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .productDescription {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 70px;
+
+        .productIntro {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                margin-right: 0px;
+
+                .img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                margin-left: 0px;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                .sellingPrice {
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 200px;
+                }
+
+                .selectColor {
+                    margin-top: 50px;
+
+                    select {
+                        border: 1px solid gray;
+                        width: 300px;
+                        font-size: 25px;
+                    }
+                }
+
+                .quantity {
+                    margin-top: 50px;
+                    width: fit-content;
+                    height: auto;
+
+                    div {
+                        border: 1px solid black;
+                        font-size: 25px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        button {
+                            width: 65px;
+                            height: auto;
+                            border: none;
+                            font-size: 27px;
+                            background-color: transparent;
+
+                        }
+                    }
+                }
+
+                .involve {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+
+                    button:first-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: black;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+
+                    button:last-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: gray;
+                        color: white;
+                        font-size: 20px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+
+                .contact {
+                    width: 100%;
+                    height: 60px;
+                    background-color: white;
+                    margin-top: 50px;
+                    align-self: center;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .second-Part {
+            margin-top: 40px;
+            display: block;
+
+            width: 100%;
+
+            .selectIntro {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 350px;
+                position: relative;
+
+
+                button {
+                    width: 40%;
+                    background-color: white;
+                    border: none;
+                    height: 50px;
+                    color: gray;
+
+                    &:hover {
+                        transition: 0.5s;
+                        color: black !important;
+                    }
+                }
+            }
+
+            .details {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid gray;
+                padding: 40px 20px;
+
+                .productDetails {
+                    display: none;
+                    width: 100%;
+                }
+
+                .comment {
+                    display: none;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .productDescription {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px;
+
+        .productIntro {
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                margin-right: 0px;
+
+                .img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                margin-left: 0px;
+
+                h1 {
+                    font-size: 15px;
+                }
+
+                .sellingPrice {
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 200px;
+                }
+
+                .selectColor {
+                    margin-top: 50px;
+
+                    select {
+                        border: 1px solid gray;
+                        width: 300px;
+                        font-size: 25px;
+                    }
+                }
+
+                .quantity {
+                    margin-top: 50px;
+                    width: fit-content;
+                    height: auto;
+
+                    div {
+                        border: 1px solid black;
+                        font-size: 25px;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        button {
+                            width: 65px;
+                            height: auto;
+                            border: none;
+                            font-size: 27px;
+                            background-color: transparent;
+
+                        }
+                    }
+                }
+
+                .involve {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 50px;
+
+                    button:first-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: black;
+                        color: white;
+                        font-size: 15px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+
+                    button:last-child {
+                        width: 40%;
+                        height: 60px;
+                        background-color: gray;
+                        color: white;
+                        font-size: 15px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+
+                .contact {
+                    width: 100%;
+                    height: 60px;
+                    background-color: white;
+                    margin-top: 50px;
+                    align-self: center;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .second-Part {
+            margin-top: 40px;
+            display: block;
+
+            width: 100%;
+
+            .selectIntro {
+
+                width: 100%;
+
+
+                button {
+                    width: 40%;
+                    background-color: white;
+                    border: none;
+                    height: 50px;
+                    color: gray;
+
+                    &:hover {
+                        transition: 0.5s;
+                        color: black !important;
+                    }
+                }
+            }
+
+            .details {
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                border: 1px solid gray;
+                padding: 40px 20px;
+
+                .productDetails {
+                    display: none;
+                    width: 100%;
+                }
+
+                .comment {
+                    display: none;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+}

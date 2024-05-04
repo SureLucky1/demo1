@@ -1,0 +1,513 @@
+.body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body .bigScreen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.body .bigScreen .bigScreen-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: auto;
+  margin-top: 50px;
+  padding-right: 30px;
+}
+.body .bigScreen .bigScreen-wrapper .left {
+  width: 450px;
+}
+.body .bigScreen .bigScreen-wrapper .left div {
+  width: 100%;
+}
+.body .bigScreen .bigScreen-wrapper .left div h1 {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.body .bigScreen .bigScreen-wrapper .left div select {
+  width: 100%;
+  height: 40px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+.body .bigScreen .bigScreen-wrapper .left div:hover {
+  padding-left: 7px;
+  background-color: black;
+  transition: 0.5s;
+}
+.body .bigScreen .bigScreen-wrapper .right {
+  width: 1300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.body .bigScreen .bigScreen-wrapper .right .info {
+  display: flex;
+  width: 78%;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+}
+.body .bigScreen .bigScreen-wrapper .right .info select {
+  position: relative;
+  width: 45%;
+  left: 0;
+  font-size: 30px;
+  height: 40px;
+}
+.body .bigScreen .bigScreen-wrapper .right .info .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 45%;
+  left: 0;
+  font-size: 30px;
+  height: 40px;
+  cursor: pointer;
+  border: 2px rgb(197, 197, 197) solid;
+  border-radius: 4px;
+  padding-right: 5px;
+}
+.body .bigScreen .bigScreen-wrapper .right .info .search:hover {
+  border: 2px rgb(16, 16, 16) solid;
+  transition: 0.5s;
+}
+.body .bigScreen .bigScreen-wrapper .right .info .search .searchGlass {
+  margin-left: 8px;
+  font-size: 27px;
+}
+.body .bigScreen .bigScreen-wrapper .right .info .search .type {
+  position: relative;
+  width: 100%;
+  left: 0;
+  font-size: 25px;
+  height: 35px;
+  border: none;
+  outline: none;
+}
+.body .bigScreen .bigScreen-wrapper .right .info select {
+  border: 2px solid rgb(210, 209, 209);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.body .bigScreen .bigScreen-wrapper .right .info select:hover {
+  transition: 0.5s;
+  border: 2px solid rgb(0, 0, 0);
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: auto;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup .product {
+  width: 30%;
+  height: auto;
+  margin: 0px 20px 15px 0px;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup .product img {
+  width: 100%;
+  height: 350px;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup nav {
+  position: relative;
+  top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup nav .pagination {
+  color: gray;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup nav .pagination .page-item {
+  margin: 0px 8px;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup nav .pagination .page-item .page-link {
+  color: gray;
+  border-radius: 5px;
+}
+.body .bigScreen .bigScreen-wrapper .right .productGroup nav .pagination .page-item .page-link:hover {
+  color: black;
+  transition: 0.3s;
+  border: 1px solid black;
+}
+.body .smallScreen {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.body .map {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.body .map .mapContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0px 25px;
+  width: 100%;
+  height: 100%;
+}
+.body .map .mapContent .left {
+  width: 850px;
+  height: 600px;
+}
+.body .map .mapContent .right {
+  margin-left: 50px;
+}
+.body .map .mapContent .right div {
+  width: 100%;
+  height: auto;
+}
+.body .map .mapContent .right div:first-child {
+  height: 60px;
+}
+.body .map .mapContent .right div:nth-child(2) {
+  margin: 10px 0px;
+  height: 150px;
+}
+.body .map .mapContent .right div:nth-child(3) {
+  margin: 10px 0px;
+  height: 120px;
+}
+.body .map .mapContent .right div:nth-child(4) {
+  margin: 10px 0px;
+  height: 220px;
+}
+
+@media only screen and (max-width: 1550px) {
+  .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body .bigScreen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body .bigScreen .bigScreen-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: auto;
+    margin-top: 50px;
+    padding: 0px 30px;
+  }
+  .body .bigScreen .bigScreen-wrapper .left {
+    width: 25%;
+    margin-right: 20px;
+  }
+  .body .bigScreen .bigScreen-wrapper .left div select {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+  }
+  .body .bigScreen .bigScreen-wrapper .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .info select,
+  .body .bigScreen .bigScreen-wrapper .right .info div {
+    position: relative;
+    width: 45%;
+    left: 0;
+    font-size: 30px;
+    height: 40px;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .info select input,
+  .body .bigScreen .bigScreen-wrapper .right .info div input {
+    width: 100%;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .productGroup {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .productGroup .product {
+    width: 30%;
+    height: auto;
+  }
+  .body .bigScreen .bigScreen-wrapper .right .productGroup .product img {
+    width: 100%;
+    height: auto;
+  }
+  .body .smallScreen {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .body .map {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .body .map .mapContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0px 25px;
+    width: 100%;
+    height: 100%;
+  }
+  .body .map .mapContent .left {
+    width: 850px;
+    height: 600px;
+  }
+  .body .map .mapContent .right {
+    margin-left: 50px;
+  }
+  .body .map .mapContent .right div {
+    width: 100%;
+    height: auto;
+  }
+  .body .map .mapContent .right div:first-child {
+    height: 60px;
+  }
+  .body .map .mapContent .right div:nth-child(2) {
+    margin: 10px 0px;
+    height: 150px;
+  }
+  .body .map .mapContent .right div:nth-child(3) {
+    margin: 10px 0px;
+    height: 120px;
+  }
+  .body .map .mapContent .right div:nth-child(4) {
+    margin: 10px 0px;
+    height: 220px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body section.bigScreen {
+    display: none;
+  }
+  .body section.smallScreen {
+    display: flex;
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 100px;
+  }
+  .body section.smallScreen .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0px;
+  }
+  .body section.smallScreen .info div {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .body section.smallScreen .info div button {
+    background-color: white;
+    display: flex;
+    width: 115px;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .body section.smallScreen .info div button svg {
+    width: 30px;
+    height: 30px;
+  }
+  .body section.smallScreen .info div .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 63%;
+    font-size: 38px;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border: 2px rgb(197, 197, 197) solid;
+    border-radius: 4px;
+    padding-right: 5px;
+  }
+  .body section.smallScreen .info div .search:hover {
+    border: 2px rgb(16, 16, 16) solid;
+    transition: 0.5s;
+  }
+  .body section.smallScreen .info div .search .searchGlass {
+    margin-left: 8px;
+    font-size: 30px;
+  }
+  .body section.smallScreen .info div .search .type {
+    height: 45px;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    border: none;
+    outline: none;
+  }
+  .body section.smallScreen .info select {
+    height: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .body section.smallScreen .productGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .body section.smallScreen .productGroup .product {
+    margin: 10px 0px;
+    width: 48%;
+    height: auto;
+  }
+  .body section.smallScreen .productGroup .product img {
+    width: 100%;
+    height: auto;
+  }
+  .body section.smallScreen .productGroup nav {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .body section.smallScreen .productGroup nav .pagination {
+    color: gray;
+  }
+  .body section.smallScreen .productGroup nav .pagination .page-item {
+    margin: 0px 8px;
+  }
+  .body section.smallScreen .productGroup nav .pagination .page-item .page-link {
+    color: gray;
+    border-radius: 5px;
+  }
+  .body section.smallScreen .productGroup nav .pagination .page-item .page-link:hover {
+    color: black;
+    transition: 0.3s;
+    border: 1px solid black;
+  }
+  .body .map {
+    width: 100%;
+  }
+  .body .map .mapContent {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .body .map .mapContent .right {
+    width: 100%;
+    margin-top: 40px;
+    margin-left: 0;
+  }
+  .body .map .mapContent .right div {
+    height: auto !important;
+  }
+  .body .map .mapContent .right div p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .body section.smallScreen .info select {
+    height: 40px;
+    font-size: 20px;
+  }
+  .body section.smallScreen .info div .search {
+    height: 40px;
+  }
+  .body section.smallScreen {
+    display: flex;
+    width: 100%;
+    padding: 0px 15px;
+    margin-bottom: 100px;
+  }
+  .body section.smallScreen .info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0px;
+  }
+  .body section.smallScreen .info div {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .body section.smallScreen .info div button {
+    background-color: white;
+    display: flex;
+    margin-top: 0px;
+  }
+  .body section.smallScreen .info div button svg {
+    width: 25px;
+    height: 30px;
+  }
+  .body section.smallScreen .info div .search .type {
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    border: none;
+    outline: none;
+  }
+  .body section.smallScreen .productGroup .product img {
+    height: auto;
+  }
+  select option {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=main.css.map */

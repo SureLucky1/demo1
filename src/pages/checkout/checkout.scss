@@ -1,0 +1,283 @@
+.checkout-wrapper {
+    padding: 0px 60px;
+    margin-top: 60px;
+
+    section {
+        margin-top: 50px;
+
+        .table {
+            margin-top: 50px;
+
+            thead {
+                tr {
+                    th:nth-child(1) {
+                        width: 3%;
+                    }
+
+                    th:nth-child(2) {
+                        width: 10%;
+                    }
+
+                    th:nth-child(3) {
+                        width: 55%;
+                    }
+
+                    th:nth-child(4) {
+                        width: 12%;
+                    }
+
+                    th:nth-child(5) {
+                        width: 12%;
+                    }
+
+                    th:nth-child(6) {
+                        width: 15%;
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td:nth-child(4) {
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+
+                    .c-image {
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+            }
+
+
+        }
+
+        .table:last-child {
+            display: none;
+        }
+
+        .btn-secondary {
+            position: relative;
+            right: 0;
+
+        }
+
+
+    }
+
+
+    .become-member {
+        position: absolute;
+        right: 0;
+        background-color: #f1f1f2;
+        width: 700px;
+        border: 1px solid #dddee0;
+        border-radius: 5px;
+        margin-right: 60px;
+        padding: 20px 15px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .checkout-wrapper {
+        padding: 0px 60px;
+
+        section {
+            margin-top: 50px;
+
+            .table {
+                margin-top: 50px;
+
+                .c-image {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+
+            .btn-secondary {
+                position: relative;
+                right: 0;
+
+            }
+
+
+        }
+
+
+        .become-member {
+            width: 53%;
+            display: block;
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:769px) {
+    .checkout-wrapper {
+        padding: 0px 20px;
+
+        section {
+            margin-top: 50px;
+
+            .max {
+                margin-top: 50px;
+                display: none;
+
+                thead {
+                    tr {
+
+                        th:nth-child(2) {
+                            width: 10%;
+                        }
+
+                        th:nth-child(3) {
+                            width: 44%;
+                        }
+
+                        th:nth-child(4) {
+                            width: 13.5%;
+                        }
+
+                        th:nth-child(5) {
+                            width: 13.5%;
+                        }
+
+                        th:nth-child(6) {
+                            width: 27%;
+                        }
+
+                    }
+                }
+
+                tbody {
+
+                    tr {
+                        td {
+                            .btn-secondary {
+                                position: relative;
+                                right: 0;
+                                font-size: 15px;
+                            }
+
+                            span {
+                                font-size: 15px;
+                            }
+
+                            .c-image {
+                                width: 150%;
+                                height: auto;
+                            }
+                        }
+
+
+
+
+                    }
+                }
+
+
+
+
+            }
+
+            .table:last-child {
+                display: block;
+
+                thead {
+                    tr {
+
+                        th:nth-child(2) {
+                            width: 18%;
+                        }
+
+                        th:nth-child(3) {
+                            width: 44%;
+                        }
+                    }
+                }
+
+                tbody {
+                    display: block;
+
+                    tr {
+                        width: 100%;
+
+                        td {
+
+                            div {
+                                display: flex;
+                                justify-content: flex-start;
+
+
+
+                                .img {
+                                    display: flex;
+                                    align-items: flex-start;
+                                    width: 65%;
+                                    justify-content: flex-start;
+
+                                    .c-image {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
+
+                                div:last-child {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 15px;
+
+                                    p,
+                                    button {
+                                        align-self: center;
+                                    }
+
+                                    div {
+                                        margin-top: 20px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        padding: 0px 10px;
+                                        justify-content: space-between;
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    tr:last-child {
+
+                        td {
+                            span {
+                                margin-left: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+
+
+        .become-member {
+            position: absolute;
+            right: 0;
+            background-color: #f1f1f2;
+            width: 700px;
+            border: 1px solid #dddee0;
+            border-radius: 5px;
+            margin-right: 60px;
+            padding: 20px 15px;
+            display: none;
+        }
+    }
+}

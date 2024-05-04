@@ -1,0 +1,20 @@
+.legal-wrapper {
+    margin-top: 40px;
+
+    p {
+        font-size: 20px;
+
+        span {
+            color: blue;
+        }
+    }
+
+    .spanGroup {
+        width: 100%;
+
+        span {
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+.legal-wrapper {
+  margin-top: 40px;
+}
+.legal-wrapper p {
+  font-size: 20px;
+}
+.legal-wrapper p span {
+  color: blue;
+}
+.legal-wrapper .spanGroup {
+  width: 100%;
+}
+.legal-wrapper .spanGroup span {
+  display: block;
+}/*# sourceMappingURL=legalization.css.map */

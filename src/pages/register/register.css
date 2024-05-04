@@ -1,0 +1,28 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin-top: 50px;
+}
+form h4 {
+  margin-bottom: 50px;
+}
+form .row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .row input {
+  margin-top: 40px;
+}
+form .btn {
+  width: 48%;
+  height: 60px;
+  font-size: 22px !important;
+  margin-top: 30px;
+  border: none;
+}/*# sourceMappingURL=register.css.map */

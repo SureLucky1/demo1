@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100%;
+  padding: 0px 25px;
+}
+.wrapper h1 {
+  margin: 60px 0px;
+}
+.wrapper p {
+  font-size: 20px;
+}
+.wrapper .first,
+.wrapper .third,
+.wrapper .second,
+.wrapper .fourth,
+.wrapper .fifth,
+.wrapper .sixth,
+.wrapper .seventh,
+.wrapper .eigth {
+  margin: 40px 0px;
+  width: 100%;
+  font-size: 23px;
+}
+.wrapper .first h5,
+.wrapper .third h5,
+.wrapper .second h5,
+.wrapper .fourth h5,
+.wrapper .fifth h5,
+.wrapper .sixth h5,
+.wrapper .seventh h5,
+.wrapper .eigth h5 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=privacy.css.map */

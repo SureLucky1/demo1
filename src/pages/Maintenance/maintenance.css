@@ -1,0 +1,21 @@
+.maintenance-wrapper {
+  padding: 0px 40px;
+}
+.maintenance-wrapper div {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+.maintenance-wrapper div h4 {
+  text-decoration: underline;
+}
+.maintenance-wrapper div p {
+  font-size: 20px;
+}
+.maintenance-wrapper div span {
+  display: block;
+  font-size: 20px;
+}
+.maintenance-wrapper p {
+  font-size: 20px;
+}/*# sourceMappingURL=maintenance.css.map */

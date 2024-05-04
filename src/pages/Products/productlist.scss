@@ -1,0 +1,965 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .bigScreen {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+
+        .bigScreen-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            height: auto;
+            margin-top: 50px;
+
+
+            .left {
+                margin-right: 20px;
+                width: 380px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+
+                .search {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    font-size: 38px;
+                    height: 55px;
+                    margin-top: 40px;
+                    margin-bottom: 60px;
+                    cursor: pointer;
+                    border: 2px rgb(197, 197, 197) solid;
+                    border-radius: 4px;
+                    padding-right: 5px;
+
+                    &:hover {
+                        border: 2px rgb(16, 16, 16) solid;
+                        transition: 0.5s;
+                    }
+
+                    .searchGlass {
+                        margin-left: 8px;
+                        font-size: 30px;
+                    }
+
+                    .type {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                        font-size: 25px;
+                        height: 40px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+
+                .item-hover {
+                    width: 100%;
+
+                    h5 {
+                        margin-bottom: 0px;
+                        background-color: white;
+                        color: black;
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 30px;
+                        border: none;
+                    }
+
+
+                    &:hover {
+                        background-color: black;
+                        padding-left: 5px;
+                        transition: 0.3s;
+                    }
+
+
+                }
+
+                .info {
+                    margin-top: 50px;
+                    display: flex;
+                    width: 78%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    select {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                        font-size: 30px;
+                        height: 40px;
+                        cursor: pointer;
+                        border: 2px rgb(197, 197, 197) solid;
+                        border-radius: 4px;
+
+                        &:hover {
+                            border: 2px rgb(16, 16, 16) solid;
+                            transition: 0.5s;
+                        }
+                    }
+
+                    .range {
+                        width: 100%;
+                        margin-top: 50px;
+                    }
+                }
+            }
+
+            .right {
+                width: 1200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+
+                .productGroup {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    height: auto;
+                    flex-wrap: wrap;
+
+                    .product {
+                        margin: 20px 5px;
+                        width: 230px;
+                        height: auto;
+
+
+                        img {
+                            width: 100%;
+                            height: 220px;
+                        }
+
+                        p {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    nav {
+                        position: relative;
+                        top: 50px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+
+
+                        .pagination {
+                            color: gray;
+
+                            .page-item {
+                                margin: 0px 8px;
+
+                                .page-link {
+                                    color: gray;
+                                    border-radius: 5px;
+
+                                    &:hover {
+                                        color: black;
+                                        transition: 0.3s;
+                                        border: 1px solid black;
+
+
+                                    }
+                                }
+
+
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .smallScreen {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .map {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        .mapContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 0px 25px;
+            width: 100%;
+            height: 100%;
+
+            .left {
+                width: 850px;
+                height: 600px;
+            }
+
+            .right {
+                margin-left: 50px;
+
+
+                div {
+                    &:first-child {
+                        height: 60px;
+
+                    }
+
+                    &:nth-child(2) {
+                        margin: 10px 0px;
+                        height: 150px;
+                    }
+
+                    &:nth-child(3) {
+                        margin: 10px 0px;
+                        height: 120px;
+                    }
+
+                    &:nth-child(4) {
+                        margin: 10px 0px;
+                        height: 220px;
+                    }
+
+
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bigScreen {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .bigScreen-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: auto;
+                margin-top: 50px;
+
+
+                .left {
+                    margin-right: 20px;
+                    width: 380px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+
+                    .type {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                        font-size: 30px;
+                        height: 40px;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+
+                    div {
+
+                        select {
+                            width: 100%;
+                            height: 40px;
+                            font-size: 30px;
+                        }
+                    }
+
+                    .info {
+                        margin-top: 50px;
+                        display: flex;
+                        width: 78%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        select {
+                            position: relative;
+                            width: 100%;
+                            left: 0;
+                            font-size: 30px;
+                            height: 40px;
+                        }
+
+                        .range {
+                            width: 100%;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 1200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+
+                    .productGroup {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        height: auto;
+                        flex-wrap: wrap;
+
+                        .product {
+                            margin: 20px 5px;
+                            width: 30%;
+                            height: auto;
+
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+
+
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+        .smallScreen {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .map {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .mapContent {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                padding: 0px 25px;
+                width: 100%;
+                height: 100%;
+
+                .left {
+                    width: 850px;
+                    height: 600px;
+                }
+
+                .right {
+                    margin-left: 50px;
+
+
+                    div {
+                        &:first-child {
+                            height: 60px;
+
+                        }
+
+                        &:nth-child(2) {
+                            margin: 10px 0px;
+                            height: 150px;
+                        }
+
+                        &:nth-child(3) {
+                            margin: 10px 0px;
+                            height: 120px;
+                        }
+
+                        &:nth-child(4) {
+                            margin: 10px 0px;
+                            height: 220px;
+                        }
+
+
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .bigScreen {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+
+            .bigScreen-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                height: auto;
+                margin-top: 50px;
+
+
+                .left {
+                    margin-right: 20px;
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+
+                    .type {
+                        position: relative;
+                        width: 100%;
+                        left: 0;
+                        font-size: 30px;
+                        height: 40px;
+                    }
+
+                    select {
+                        width: 100%;
+                        height: 40px;
+                        font-size: 30px;
+                    }
+
+                    .info {
+                        margin-top: 50px;
+                        display: flex;
+                        width: 78%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        select {
+                            position: relative;
+                            width: 100%;
+                            left: 0;
+                            font-size: 30px;
+                            height: 40px;
+                        }
+
+                        .range {
+                            width: 100%;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+
+                .right {
+                    width: 65%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+
+                    .productGroup {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        height: auto;
+                        flex-wrap: wrap;
+
+                        .product {
+                            margin: 20px 5px;
+                            width: 45%;
+                            height: auto;
+
+
+                            img {
+                                width: 100%;
+                                height: 220px;
+                            }
+
+
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+        .smallScreen {
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .map {
+            width: 100vw;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .mapContent {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: flex-start;
+                padding: 0px 25px;
+                width: 100%;
+                height: 100%;
+
+                .left {
+                    width: 850px;
+                    height: 600px;
+                }
+
+                .right {
+                    margin-left: 50px;
+
+
+                    div {
+                        &:first-child {
+                            height: auto;
+
+                        }
+
+                        &:nth-child(2) {
+                            margin: 10px 0px;
+                            height: auto;
+                        }
+
+                        &:nth-child(3) {
+                            margin: 10px 0px;
+                            height: auto;
+                        }
+
+                        &:nth-child(4) {
+                            margin: 10px 0px;
+                            height: 220px;
+                        }
+
+
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        section.bigScreen {
+            display: none;
+        }
+
+        section.smallScreen {
+            display: flex;
+            width: 100vw;
+            padding: 0px 25px;
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 25px 0px;
+
+                div {
+                    margin-top: 25px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+
+                    button {
+                        background-color: white;
+                        display: flex;
+                        width: 115px;
+                        font-size: 18px;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    .search {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 72%;
+                        font-size: 38px;
+                        height: 50px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        cursor: pointer;
+                        border: 2px rgb(197, 197, 197) solid;
+                        border-radius: 4px;
+                        padding-right: 5px;
+
+                        &:hover {
+                            border: 2px rgb(16, 16, 16) solid;
+                            transition: 0.5s;
+                        }
+
+                        .searchGlass {
+                            margin-left: 8px;
+                            font-size: 30px;
+                        }
+
+                        .type {
+                            height: 45px;
+
+                            font-size: 25px;
+                            position: relative;
+                            width: 100%;
+                            left: 0;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+
+                select {
+                    height: 50px;
+                    font-size: 30px;
+                }
+
+            }
+
+            .productGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                height: auto;
+
+                .product {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    margin: 10px 0px;
+
+                    width: 48%;
+                    height: auto;
+                }
+
+                nav {
+                    position: relative;
+                    top: 50px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .pagination {
+                        color: gray;
+
+                        .page-item {
+                            margin: 0px 8px;
+
+                            .page-link {
+                                color: gray;
+                                border-radius: 5px;
+
+                                &:hover {
+                                    color: black;
+                                    transition: 0.3s;
+                                    border: 1px solid black;
+
+
+                                }
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        .map {
+            width: 100%;
+
+            .mapContent {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+
+                .right {
+                    width: 100%;
+                    margin-top: 40px;
+                    margin-left: 0;
+
+                    div {
+
+                        p {
+
+                            width: 100%;
+                        }
+
+                        height: 150px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .product {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        section.bigScreen {
+            display: none;
+        }
+
+        section.smallScreen {
+
+            .info {
+
+                div {
+                    margin-top: 25px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+
+                    select {
+                        display: flex;
+                        width: 23%;
+                        font-size: 20px;
+                        margin-top: 0px;
+
+                        option {
+                            z-index: -1;
+                        }
+                    }
+
+                    .search {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 72%;
+                        font-size: 38px;
+                        height: 40px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        cursor: pointer;
+                        border: 2px rgb(197, 197, 197) solid;
+                        border-radius: 4px;
+                        padding-right: 5px;
+
+                        &:hover {
+                            border: 2px rgb(16, 16, 16) solid;
+                            transition: 0.5s;
+                        }
+
+                        .searchGlass {
+                            margin-left: 8px;
+                            font-size: 30px;
+                        }
+
+                        .type {
+                            height: 30px;
+
+                            font-size: 20px;
+                            position: relative;
+                            width: 100%;
+                            left: 0;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+
+                select {
+                    height: 40px;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+
+            }
+
+            .productGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                height: auto;
+
+                .product {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    margin: 10px 0px;
+
+                    width: 48%;
+                    height: auto;
+                }
+
+                nav {
+                    position: relative;
+                    top: 50px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    .pagination {
+                        color: gray;
+
+                        .page-item {
+                            margin: 0px 8px;
+
+                            .page-link {
+                                color: gray;
+                                border-radius: 5px;
+
+                                &:hover {
+                                    color: black;
+                                    transition: 0.3s;
+                                    border: 1px solid black;
+
+
+                                }
+                            }
+
+
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        .map {
+            width: 100%;
+
+            .mapContent {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+
+
+                .right {
+                    width: 100%;
+                    margin-top: 40px;
+                    margin-left: 0;
+
+                    div {
+
+                        p {
+
+                            width: 100%;
+                        }
+
+                        height: 150px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

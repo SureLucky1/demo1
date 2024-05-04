@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    padding: 0px 25px;
+
+    h1 {
+        margin: 60px 0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .first,
+    .third,
+    .second,
+    .fourth,
+    .fifth,
+    .sixth,
+    .seventh,
+    .eigth {
+        margin: 40px 0px;
+        width: 100%;
+        font-size: 23px;
+
+        h5 {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+    }
+}

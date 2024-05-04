@@ -1,0 +1,34 @@
+.wrapper {
+    width: 100%;
+    padding: 0px 25px;
+
+    .first,
+    .second {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 23px;
+
+        h5 {
+            margin: 40px 0px;
+        }
+    }
+
+    .third {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+        span {
+            background-color: yellow;
+            width: auto;
+            font-size: 23px;
+        }
+    }
+
+    .first {
+        span {
+
+            background-color: yellow;
+        }
+    }
+}

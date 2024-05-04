@@ -1,0 +1,172 @@
+.order-wrapper {
+  padding: 30px 60px 0px 60px;
+}
+.order-wrapper section {
+  margin-top: 50px;
+}
+.order-wrapper section .laptop {
+  margin-top: 50px;
+}
+.order-wrapper section .laptop thead {
+  width: 100%;
+}
+.order-wrapper section .laptop thead tr th:nth-child(1) {
+  width: 3%;
+}
+.order-wrapper section .laptop thead tr th:nth-child(2) {
+  width: 20%;
+}
+.order-wrapper section .laptop thead tr th:nth-child(3) {
+  width: 55%;
+}
+.order-wrapper section .laptop thead tr th:nth-child(4) {
+  width: 12%;
+}
+.order-wrapper section .laptop thead tr th:nth-child(5) {
+  width: 12%;
+}
+.order-wrapper section .laptop .c-image {
+  width: 150px;
+  height: 150px;
+}
+.order-wrapper section .mobile {
+  display: none;
+}
+.order-wrapper section .mobile thead {
+  width: 100%;
+}
+.order-wrapper section .mobile thead tr {
+  width: 100%;
+}
+.order-wrapper section .mobile thead tr th:nth-child(2) {
+  width: 45%;
+  text-align: center;
+}
+.order-wrapper section .mobile thead tr th:nth-child(3) {
+  width: 48%;
+  text-align: center;
+}
+.order-wrapper section .mobile tbody {
+  display: block;
+}
+.order-wrapper section .mobile tbody tr {
+  width: 100%;
+  display: flex;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(2) {
+  padding: 0px;
+  width: 40%;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(2) .img {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(2) .img .c-image {
+  width: 100%;
+  height: auto;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(3) {
+  width: 50%;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(3) div {
+  display: flex;
+  flex-direction: column;
+}
+.order-wrapper section .mobile tbody tr td:nth-child(3) div p {
+  align-self: center;
+}
+.order-wrapper section .btn-secondary {
+  position: relative;
+  right: 0;
+}
+.order-wrapper .become-member {
+  position: absolute;
+  right: 0;
+  background-color: #f1f1f2;
+  width: 700px;
+  border: 1px solid #dddee0;
+  border-radius: 5px;
+  margin-right: 60px;
+  padding: 20px 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .order-wrapper {
+    padding: 0px 60px;
+  }
+  .order-wrapper section {
+    margin-top: 50px;
+  }
+  .order-wrapper section .laptop {
+    margin-top: 50px;
+  }
+  .order-wrapper section .laptop thead tr th:nth-child(2) {
+    width: 25%;
+  }
+  .order-wrapper section .laptop thead tr th:nth-child(3) {
+    width: 55%;
+  }
+  .order-wrapper section .laptop thead tr th:nth-child(4) {
+    width: 13%;
+  }
+  .order-wrapper section .laptop thead tr th:nth-child(5) {
+    width: 13%;
+  }
+  .order-wrapper section .laptop tbody tr td .c-image {
+    width: 100%;
+    height: auto;
+  }
+  .order-wrapper section .mobile {
+    display: none;
+  }
+  .order-wrapper section .btn-secondary {
+    position: relative;
+    right: 0;
+  }
+  .order-wrapper .become-member {
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f2;
+    width: 700px;
+    border: 1px solid #dddee0;
+    border-radius: 5px;
+    margin-right: 60px;
+    padding: 20px 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .order-wrapper {
+    padding: 0px 60px;
+    margin-top: 40px;
+  }
+  .order-wrapper section {
+    margin-top: 50px;
+  }
+  .order-wrapper section .laptop {
+    margin-top: 50px;
+    display: none;
+  }
+  .order-wrapper section .laptop .c-image {
+    width: 150px;
+    height: 150px;
+  }
+  .order-wrapper section .mobile {
+    display: block;
+  }
+  .order-wrapper section .btn-secondary {
+    position: relative;
+    right: 0;
+  }
+  .order-wrapper .become-member {
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f2;
+    width: 700px;
+    border: 1px solid #dddee0;
+    border-radius: 5px;
+    margin-right: 60px;
+    padding: 20px 15px;
+  }
+}/*# sourceMappingURL=order.css.map */

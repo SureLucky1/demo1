@@ -1,0 +1,69 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 50px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+
+        .row {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .mb-3 {
+                input {
+                    margin-top: 40px;
+                }
+
+                &:nth-child(2) {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    width: 90px;
+
+                    input {
+                        margin-top: 5px;
+                    }
+
+                }
+            }
+        }
+
+        .btn {
+            width: 48%;
+            height: 60px;
+            font-size: 22px !important;
+            margin-top: 30px;
+            border: none;
+        }
+
+
+    }
+
+    .forgetPW {
+        width: 48% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            margin-top: 20px;
+            align-self: flex-start;
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+}
