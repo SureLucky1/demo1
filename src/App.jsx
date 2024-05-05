@@ -243,17 +243,16 @@ const [proCa, setProCa] = useState("商品分類");
       setAccessories("Accessories");
       setPro("All Products");
       setProCa("Categories");
-
       updatedResult = filteredData(allEngProducts, selectedCategory, selectedPrice, search, sortedProducts);
     }
     setResult(updatedResult);
-  }, [Lan, moneyIndex, allChProducts, allSimpleChProducts, allEngProducts, selectedCategory, selectedPrice, search, sortedProducts]);
+  }, [currentPage, Lan, moneyIndex, allChProducts, allSimpleChProducts, allEngProducts, selectedCategory, selectedPrice, search, sortedProducts]);
   
 useEffect(()=>{
 setQuery("")
     setSearch("");
 
-}, [allChProducts, allSimpleChProducts, allEngProducts, selectedCategory, selectedPrice, sortedProducts])
+}, [currentPage, allChProducts, allSimpleChProducts, allEngProducts, selectedCategory, selectedPrice, sortedProducts])
 
   return (
     <ShowContext.Provider value={{Lan, setLan, setCurrency, moneyIndex, setMoney, rightsidebarWidth, setRightSideBarWidth, leftsidebardisplay, setLeftSideBarDisplay, rightsidebardisplay, setRightSideBarDisplay, Total, qty, setQty, index, login, setLogin, chooseRecord, setChooseRecord, name, setName, price, setPrice, quantity, setQuantity, sortedProducts, setSortedProducts, setSelectedPrice, show, setShow, query, setQuery, selectedCategory, setSelectedCategory, setSearch}}>

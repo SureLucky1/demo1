@@ -61,7 +61,8 @@ const dispatch = useDispatch()
        
         document.querySelector(".large-input").style.transition= "1.5s";
         document.querySelector(".large-input").style.borderRadius= "0px";
-        document.querySelector(".large-input").style.textDecoration= "underline";
+
+        document.querySelector(".large-input").style.borderBottom= "2px solid black";
       }
       else if(window.innerWidth > 800){
         document.querySelector(".large-input").style.opacity = 1;
@@ -307,7 +308,7 @@ const dispatch = useDispatch()
       onKeyUp={handleSearch}
       value={query} 
       onBlur={setInputClose} 
-      
+      onClick={openInput}
       />
       <InputModal
             handleInputChange={handleInputChange}

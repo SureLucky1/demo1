@@ -151,7 +151,9 @@ body {
   width: 0;
   display: flex;
   opacity: 0;
-  border: none;
+  border: 0;
+  font-weight: 400;
+  padding-left: 10px;
 }
 
 .nav1 .main .upper ul li .dropdown-toggle:hover {

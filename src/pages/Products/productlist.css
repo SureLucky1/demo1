@@ -122,11 +122,20 @@
 .product .bigScreen .bigScreen-wrapper .right .productGroup .product {
   margin: 20px 5px;
   width: 230px;
+  min-height: 330px;
+  max-height: 330px;
   height: auto;
 }
 .product .bigScreen .bigScreen-wrapper .right .productGroup .product img {
   width: 100%;
-  height: 220px;
+  min-height: 230px;
+  max-height: 230px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  margin: 15px 0px;
 }
 .product .bigScreen .bigScreen-wrapper .right .productGroup .product p {
   width: 100%;
@@ -290,6 +299,8 @@
   .product .bigScreen .bigScreen-wrapper .right .productGroup .product img {
     width: 100%;
     height: auto;
+    min-height: 250px;
+    max-height: 250px;
   }
   .product .smallScreen {
     display: none;
@@ -565,12 +576,21 @@
   }
   .product section.smallScreen .productGroup .product {
     margin: 10px 0px;
+    min-height: 250px;
     width: 48%;
     height: auto;
   }
   .product section.smallScreen .productGroup .product img {
     width: 100%;
     height: auto;
+    max-width: 230px;
+    min-height: 230px;
+    max-height: 230px;
+    margin: 15px 0px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
   }
   .product section.smallScreen .productGroup nav {
     position: relative;
