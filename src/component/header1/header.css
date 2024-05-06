@@ -152,8 +152,14 @@ body {
   display: flex;
   opacity: 0;
   border: 0;
-  font-weight: 400;
   padding-left: 10px;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.nav1 .main .upper ul li .large-input:focus {
+  border-color: #fff;
+  border-bottom: 2px solid black;
 }
 
 .nav1 .main .upper ul li .dropdown-toggle:hover {
