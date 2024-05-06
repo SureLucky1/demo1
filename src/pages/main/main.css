@@ -109,14 +109,14 @@
 .body .bigScreen .bigScreen-wrapper .right .productGroup {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   height: auto;
   flex-wrap: wrap;
   margin-top: 30px;
 }
 .body .bigScreen .bigScreen-wrapper .right .productGroup .product {
-  width: 30%;
+  width: 250px;
   min-height: 330px;
   max-height: 330px;
   height: auto;
