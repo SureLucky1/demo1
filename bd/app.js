@@ -13,17 +13,7 @@ var nodemailer = require("nodemailer");
 
 const JWT_SECRET ="aa";
 
-//const mongoUrl =
-//  "mongodb+srv://adarsh:adarsh@cluster0.zllye.mongodb.net/?retryWrites=true&w=majority";
-  // const mongoUrl =
-  // "mongodb://atlas-sql-6205e6dcc60a6311a2aba3c3-ar39i.a.query.mongodb.net/test?ssl=true&authSource=admin";
-  //  const mongoUrl =
-  //  "mongodb://atlas-sql-6205e6dcc60a6311a2aba3c3-ar39i.a.query.mongodb.net/myFirstDatabase?ssl=true&authSource=admin";
    const mongoUrl = "mongodb+srv://Ken:Ken2024@cluster0.ar39i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-  //  const mongoUrl =
-  //  "mongodb+srv://Ken:Ken@cluster0.ar39i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-  // const mongoUrl =
-  // "mongodb://Ken:Ken@atlas-sql-6205e6dcc60a6311a2aba3c3-ar39i.a.query.mongodb.net/?ssl=true&authSource=admin&appName=atlas-sql-6205e6dcc60a6311a2aba3c3";
 
 mongoose
   .connect(mongoUrl, {
@@ -42,31 +32,6 @@ const User = mongoose.model("UserInfo");
 const Product = mongoose.model("ProductInfo");
 const Images = mongoose.model("ImageDetails");
 
-// app.post("/profile/update", async (req, res) => {
-//   const { email, useremail, gender, name } = req.body;
-
-//   // Find the user by email
-//   const user = await User.findOne({ email: useremail });
-//   if (!user) {
-//     return res.status(404).json({ error: "User not found" });
-//   }
-
-//   // Update user data
-//   const updatedUser = await User.findByIdAndUpdate(user, { email, gender, name }, {
-//     new: true,
-//     useFindAndModify: false,
-//   });
-
-//   // Check if the user was successfully updated
-//   if (!updatedUser) {
-//     return res.status(500).json({ error: "Could not update user" });
-//   }
-
-//   res.status(200).json({
-//     success: true,
-//     user: updatedUser,
-//   });
-// });
 app.post("/profile/update", async (req, res) => {
   const { email, useremail, gender, name } = req.body;
 
@@ -326,26 +291,6 @@ app.post("/reset-password/:useremail/:token", async (req, res) => {
   }
 });
 
-app.get("/getAllUser", async (req, res) => {
-  try {
-    const allUser = await User.find({});
-    res.send({ status: "ok", data: allUser });
-  } catch (error) {
-    console.log(error);
-  }
-});
-
-app.post("/deleteUser", async (req, res) => {
-  const { userid } = req.body;
-  try {
-    User.deleteOne({ _id: userid }, function (err, res) {
-      console.log(err);
-    });
-    res.send({ status: "Ok", data: "Deleted" });
-  } catch (error) {
-    console.log(error);
-  }
-});
 
 
 app.post("/upload-image", async (req, res) => {
@@ -371,28 +316,3 @@ app.get("/get-image", async (req, res) => {
   }
 })
 
-app.get("/paginatedUsers", async (req, res) => {
-  const allUser = await User.find({});
-  const page = parseInt(req.query.page)
-  const limit = parseInt(req.query.limit)
-
-  const startIndex = (page - 1) * limit
-  const lastIndex = (page) * limit
-
-  const results = {}
-  results.totalUser=allUser.length;
-  results.pageCount=Math.ceil(allUser.length/limit);
-
-  if (lastIndex < allUser.length) {
-    results.next = {
-      page: page + 1,
-    }
-  }
-  if (startIndex > 0) {
-    results.prev = {
-      page: page - 1,
-    }
-  }
-  results.result = allUser.slice(startIndex, lastIndex);
-  res.json(results)
-})
