@@ -184,5 +184,8 @@
     "cancel": "Cancel",
     "updatePD": "Update Profile Deatils",
     "updateProfile": "Update Profile",
-    "upload": "Upload Avatar"
+    "upload": "Upload Avatar",
+    "payMethod": "Payment Method",
+    "cardNumbers": "Card Numbers",
+    "checkout": "Checkout"
 }

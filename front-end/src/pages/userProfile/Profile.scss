@@ -14,6 +14,8 @@
   background-color: white;
   padding: 3rem 0 2.5rem;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .headingProfile {
@@ -22,6 +24,7 @@
   font-size: 30px !important;
   text-transform: uppercase;
   color: #414141;
+
 }
 
 .profileConatiner {
@@ -29,7 +32,10 @@
   justify-content: space-around;
   width: 97%;
   align-items: center;
+
 }
+
+
 
 .leftCotainer {
   max-width: 27vmax;
@@ -39,6 +45,7 @@
   margin-bottom: 18rem;
   padding: 0;
 }
+
 
 .greeting {
   font-size: 16px;
@@ -55,6 +62,8 @@
   text-transform: uppercase !important;
 }
 
+
+
 .profileHeading {
   font-size: 18px !important;
   font-weight: 900 !important;
@@ -62,6 +71,7 @@
   color: #212121 !important;
   text-transform: uppercase !important;
 }
+
 
 .profileSection {
   background-color: white;
@@ -71,12 +81,14 @@
   align-items: center;
   gap: 0.8rem;
   padding: 1.5rem 2.5rem 3rem 0.5rem;
+  ;
   border-radius: 3px;
   margin-bottom: 1rem;
   text-align: center;
   padding-top: 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .profileAvatar {
   width: 90px !important;
@@ -86,6 +98,7 @@
   font-weight: 800 !important;
   background-color: #414141 !important;
 }
+
 
 .leftDetails {
   display: flex;
@@ -103,11 +116,15 @@
   padding: 0;
 }
 
+
+
 .profileText {
   font-size: 1rem !important;
   color: #414141;
   text-transform: uppercase;
 }
+
+
 
 .profileText2 {
   font-size: 16px;
@@ -132,6 +149,7 @@
   border-radius: 3px !important;
 }
 
+
 .ordersButton {
   width: 100%;
   padding: 0.5rem !important;
@@ -152,9 +170,12 @@
   background-color: #ed1c24 !important;
 }
 
+
 .profileButton:hover {
   background-color: #ed1c24 !important;
 }
+
+
 
 .rightConatiner {
   width: 58vmax;
@@ -185,150 +206,203 @@
   gap: 2px;
 }
 
+
 @media (max-width: 950px) {
   .profileConatiner {
     flex-direction: column;
     max-width: 100%;
   }
+
   .leftCotainer {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 0;
   }
+
   .profileHeadingLeft {
     width: 88vmax;
     text-align: center;
   }
+
   .profileHeading {
     width: 100%;
   }
+
   .profileSection {
     width: 88vmax;
   }
+
   .profileAvatar {
     width: 110px;
     height: 110px;
     font-size: 3rem;
   }
+
   .profileText2 {
     width: 70%;
   }
+
   .leftDetails {
     gap: 20px;
     width: 100%;
   }
+
   .profileSubHeading {
     font-size: 1.8rem;
   }
+
+
   .profileText {
     font-size: 1.5rem;
   }
+
+
   .myOrder {
     width: 88vmax;
     padding: 1.5rem;
   }
+
   .ordersButton {
     width: 70%;
     padding: 1rem;
   }
+
+
   .rightConatiner {
     width: 88vmax;
     padding: 3rem;
     margin-top: 1rem;
   }
+
+
+
 }
-@media (max-width: 870px) {
+
+@media (max-width : 870px) {
   .rightConatiner {
     width: 112vmax;
     padding-left: 10rem;
   }
+
+
+
   .profileText3 {
     width: 60%;
   }
+
   .ordersButton {
     width: 60%;
   }
+
   .profileButton {
     width: 40% !important;
   }
 }
-@media (max-width: 670px) {
+
+@media (max-width : 670px) {
   .rightConatiner {
     width: 112vmax;
     padding-left: 15rem;
   }
+
   .profileText3 {
     width: 70%;
   }
+
   .ordersButton {
     width: 50%;
   }
+
   .profileButton {
     width: 35% !important;
   }
 }
-@media (max-width: 599px) {
+
+@media (max-width : 599px) {
   .rightConatiner {
     width: 112vmax;
     padding-left: 16rem;
   }
+
   .ordersButton {
     width: 40%;
   }
+
   .profileButton {
     width: 30% !important;
   }
 }
-@media (max-width: 499px) {
+
+@media (max-width : 499px) {
   .rightConatiner {
     width: 112vmax;
     padding-left: 18rem;
+
   }
+
   .profileText2 {
     width: 55%;
   }
+
   .profileText3 {
     width: 55%;
   }
+
   .ordersButton {
     width: 40%;
   }
+
   .profileButton {
     width: 30%;
   }
 }
-@media (max-width: 400px) {
+
+@media (max-width : 400px) {
   .rightConatiner {
     width: 100vmax;
     padding-left: 7rem;
     padding-right: 7rem;
     text-align: center;
+
+    .righHeadings {
+      width: 100%;
+      text-align: center;
+
+      .profileText2 {
+        width: 100% !important;
+      }
+
+      .profileText3 {
+        width: 100% !important;
+      }
+    }
+
+
+    .profileDetials {
+      width: 100%;
+      text-align: center;
+
+      .ordersButton {
+        width: 50%;
+      }
+
+      .profileButton {
+        width: 50% !important;
+      }
+    }
+
+    .mangeAccount {
+      width: 100%;
+      text-align: center;
+
+      p {
+        width: 100%;
+      }
+    }
   }
-  .rightConatiner .righHeadings {
-    width: 100%;
-    text-align: center;
-  }
-  .rightConatiner .righHeadings .profileText2 {
-    width: 100% !important;
-  }
-  .rightConatiner .righHeadings .profileText3 {
-    width: 100% !important;
-  }
-  .rightConatiner .profileDetials {
-    width: 100%;
-    text-align: center;
-  }
-  .rightConatiner .profileDetials .ordersButton {
-    width: 50%;
-  }
-  .rightConatiner .profileDetials .profileButton {
-    width: 50% !important;
-  }
-  .rightConatiner .mangeAccount {
-    width: 100%;
-    text-align: center;
-  }
-  .rightConatiner .mangeAccount p {
-    width: 100%;
-  }
-}/*# sourceMappingURL=Profile.css.map */
+
+
+
+
+
+}

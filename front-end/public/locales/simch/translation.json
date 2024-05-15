@@ -183,5 +183,8 @@
     "cancel": "取消",
     "updatePD": "更新个人资料详细信息",
     "updateProfile": "更新个人资料",
-    "upload": "上传头像"
+    "upload": "上传头像",
+    "payMethod": "付款方式",
+    "cardNumbers": "卡号码",
+    "checkout": "结算"
 }

@@ -5,6 +5,7 @@ import { clearTotal } from '../../../component/payment/Redux/priceSlice';
 import "./Modal.css";
 import { MdClose } from 'react-icons/md';
 import { moneyData } from '../../../data';
+import { useTranslation } from 'react-i18next';
 import ShowContext from '../../..';
 const Modal = ({ total, showModal, setShowModal }) => {
   const {moneyIndex} = useContext(ShowContext);
@@ -13,7 +14,7 @@ const Modal = ({ total, showModal, setShowModal }) => {
   const [cardNumber, setCardNumber] = useState("");
   const Total = useSelector(state => state.price.total);
   const dispatch = useDispatch();
-
+  const { t} = useTranslation();
   const check = () => {
     if ((!paymentMethod) || (cardNumber === "")) {
       alert("Please select a payment method.");
@@ -52,6 +53,7 @@ const Modal = ({ total, showModal, setShowModal }) => {
           });
       dispatch(clearCart());
       dispatch(clearTotal());
+      setShowModal(prev => !prev);
     }
   }
 
@@ -61,7 +63,7 @@ const Modal = ({ total, showModal, setShowModal }) => {
         <div className='modal'>
           <div>
             <form>
-              <label htmlFor="fname">Payment Method</label><br />
+              <label htmlFor="fname">{t("payMethod")}</label><br />
     <select id="paymentMethod" name="paymentMethod" onChange={e => setPaymentMethod(e.target.value)}>
     <option value="Paypal">Paypal</option>
     <option value="Master Card">Master Card</option>
@@ -77,13 +79,13 @@ const Modal = ({ total, showModal, setShowModal }) => {
     <option value="銀行轉賬">銀行轉賬</option>
     <option value="BoC Pay">BoC Pay</option>
   </select>
-              <label className='card'>Card Numbers</label><br />
+              <label className='card'>{t("cardNumbers")}</label><br />
               <input type="text" id="lname" placeholder="e.g. XXXX-XXXX-XXXX-XXXX" onChange={e => setCardNumber(e.target.value)} />
 
-              <h2>Total Price: {moneyData[moneyIndex].symbol}{Math.floor(total)}</h2>
+              <h2>{t("sum")}: {moneyData[moneyIndex].symbol}{Math.floor(total)}</h2>
             </form>
             <button className="btn btn-success" onClick={check}>
-              Checkout
+            {t("checkOut")}
             </button>
             <MdClose
                 aria-label='Close modal'
