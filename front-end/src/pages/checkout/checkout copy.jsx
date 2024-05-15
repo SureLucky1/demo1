@@ -95,12 +95,10 @@ const useremail = localStorage.getItem('useremail');
                 </div>
                 <section>
                     <h1>{t("cart")}</h1>
-                    <Button>{t("removeChoice")}</Button>
                     <Table className='max' style={{width:"100%"}}>
                         <thead >
                             <tr>
                                 <th >
-                                    <input type='checkbox'/>
                                 </th>
                                 <th>
                                 {t("merchandise")}
@@ -122,7 +120,7 @@ const useremail = localStorage.getItem('useremail');
                         <tbody >
                             {cartitems.map((item, id ) => (
                                 <tr key={id} className="list" style={{padding: "50px 50px"}}>
-                                    <th><input type='checkbox'/></th>
+                                    <th></th>
                                     <td><img src={item.image} className="c-image" alt='' /></td>
                                     <td >{itemTitle}</td>
                                     <td><Button  onClick={()=>{handledecreaseCart({id: item.id, title: item.title, image: item.img1, price: Number(item.price), curr: moneyData[moneyIndex].currency});setQty(cartitems[id].cartQuantity);}}>-</Button><p >{item.cartQuantity}</p>
@@ -150,7 +148,6 @@ const useremail = localStorage.getItem('useremail');
                         <thead>
                             <tr>
                                 <th >
-                                    <input type='checkbox'/>
                                 </th>
                                 <th>
                                 {t("merchandise")}
@@ -163,7 +160,7 @@ const useremail = localStorage.getItem('useremail');
                         <tbody className='mini'>
                             {cartitems.map((item, id ) => (
                                 <tr key={id} className="list" style={{padding: "50px 50px"}}>
-                                    <th><input type='checkbox'/></th>
+                                    <th></th>
                                     <td>
                                         <div>
                                             <div className='img'>

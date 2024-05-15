@@ -37,7 +37,6 @@ const { t} = useTranslation();
                         <thead>
                             <tr>
                                 <th >
-                                    <input type='checkbox'/>
                                 </th>
                                 <th >
                                 {t("merchandise")}
@@ -57,7 +56,7 @@ const { t} = useTranslation();
                             {chooseRecord.map((item, id ) => (
                                 item.record.map((subitem, id)=>(
                                 <tr key={id} className="list" style={{padding: "50px 50px"}}>
-                                    <th><input type='checkbox'/></th>
+                                    <th></th>
                                     <td><img src={subitem.image} className="c-image" alt='' /></td>
                                     <td >{itemTitle}</td>
                                     <td><p >{subitem.quantity}</p></td>
@@ -70,7 +69,6 @@ const { t} = useTranslation();
                         <thead>
                             <tr>
                                 <th>
-                                    <input type='checkbox'/>
                                 </th>
                                 <th>
                                 {t("merchandise")}
@@ -84,7 +82,7 @@ const { t} = useTranslation();
                             {chooseRecord.map((item, id ) => (
                                 item.record.map((subitem, id)=>(
                                 <tr key={id} className="list" style={{padding: "5px 0px"}}>
-                                    <th><input type='checkbox'/></th>
+                                    <th></th>
                                     <td colspan="1">
                                         <div className='img'>
                                         <img src={subitem.image} className="c-image" alt='' />

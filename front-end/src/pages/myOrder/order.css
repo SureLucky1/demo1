@@ -138,7 +138,7 @@
 }
 @media only screen and (max-width: 500px) {
   .order-wrapper {
-    padding: 0px 60px;
+    padding: 0px 15px;
     margin-top: 40px;
   }
   .order-wrapper section {
