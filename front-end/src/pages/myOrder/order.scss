@@ -226,6 +226,19 @@
 
             .mobile {
                 display: block;
+
+                thead {
+                    tr {
+
+                        th:nth-child(2) {
+                            width: 18%;
+                        }
+
+                        th:nth-child(3) {
+                            width: 80%;
+                        }
+                    }
+                }
             }
 
             .btn-secondary {

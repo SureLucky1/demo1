@@ -155,6 +155,12 @@
   .order-wrapper section .mobile {
     display: block;
   }
+  .order-wrapper section .mobile thead tr th:nth-child(2) {
+    width: 18%;
+  }
+  .order-wrapper section .mobile thead tr th:nth-child(3) {
+    width: 80%;
+  }
   .order-wrapper section .btn-secondary {
     position: relative;
     right: 0;
