@@ -31,7 +31,7 @@ const {token, useremail} = useParams();
 
     e.preventDefault();
     fetch(`http://localhost:5000/reset-password/${useremail}/${token}`, {
-      method: "POST",
+      method: "PUT",
       crossDomain: true,
       headers: {
         "Content-Type": "application/json",

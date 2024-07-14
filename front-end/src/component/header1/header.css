@@ -123,6 +123,16 @@ body {
   width: 280px;
 }
 
+.nav1 .main .upper ul:first-child li:nth-child(3):hover .large-input {
+  width: 180px;
+  display: flex;
+  opacity: 1;
+  border: 0;
+  padding-left: 10px;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
 .nav1 .main .upper ul:first-child li:nth-child(3) svg {
   margin-right: 12.5px;
   font-size: 19px;
@@ -155,6 +165,18 @@ body {
   padding-left: 10px;
   outline: none;
   border-bottom: 2px solid black;
+  transition: 1.5s;
+}
+
+.nav1 .main .upper ul li .large-input-set {
+  width: 180px;
+  display: flex;
+  opacity: 1;
+  border: 0;
+  padding-left: 10px;
+  outline: none;
+  border-bottom: 2px solid black;
+  transition: 1.5s;
 }
 
 .nav1 .main .upper ul li .large-input:focus {
@@ -254,6 +276,11 @@ body {
 
   .nav1 .main .upper ul:first-child li {
     width: 120px;
+  }
+
+  .nav1 .main .upper ul:first-child li:nth-child(3):hover .large-input,
+  .nav1 .main .upper ul li .large-input-set {
+    width: 85px;
   }
 
   .nav1 .main .upper ul:last-child {

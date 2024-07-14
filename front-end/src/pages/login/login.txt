@@ -22,7 +22,7 @@ const navigate = useNavigate()
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
-
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
         email,
@@ -43,7 +43,7 @@ const navigate = useNavigate()
             headers: {
               "Content-Type": "application/json",
               Accept: "application/json",
-
+              "Access-Control-Allow-Origin": "*",
             },
           })
             .then((res) => res.json())

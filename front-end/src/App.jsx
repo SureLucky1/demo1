@@ -101,10 +101,6 @@ function App() {
       setRightSideBarDisplay("none")
       setLeftSideBarDisplay("none")
       setRightSideBarWidth("0");
-             if(e.target.className !=="large-input"){
-         document.querySelector(".large-input").style.opacity = 0;
-         document.querySelector(".large-input").style.width= 0;
-       }
     }
     }
 

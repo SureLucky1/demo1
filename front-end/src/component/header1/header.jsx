@@ -54,25 +54,20 @@ const dispatch = useDispatch()
       }
     }      
 
-    const openInput = () =>{
-      if(window.innerWidth > 1000){
-        document.querySelector(".large-input").style.opacity = 1;
-        document.querySelector(".large-input").style.width= "200px";
-       
-        document.querySelector(".large-input").style.transition= "1.5s";
+    const inputToggle = (e) => {
+      if (e.target.classList.contains("large-input")) {
+        document.getElementById("input").classList.remove("large-input");
+        document.getElementById("input").classList.add("large-input-set");
       }
-      else if(window.innerWidth > 800){
-        document.querySelector(".large-input").style.opacity = 1;
-        document.querySelector(".large-input").style.width= "78.3px";
-      
-        document.querySelector(".large-input").style.transition= "1.5s";
-        document.querySelector(".large-input").style.borderRadius= "0px";
-        document.querySelector(".large-input").style.textDecoration= "underline";
-            }
-      }
-      useEffect(()=>{
-        openInput();
-      }, [window.innerWidth])
+    };
+  const closeInput = () =>{
+    if(document.getElementById("input").classList.contains("large-input-set")){
+              document.getElementById("input").classList.add("large-input");
+    document.getElementById("input").classList.remove("large-input-set");
+    }
+
+    }
+
 
     const setInput = () => {
       if(showModal === false){
@@ -297,9 +292,10 @@ const dispatch = useDispatch()
 
 
     </Dropdown></li> 
-    <li className="hideOnMobile three" id="" onMouseEnter={openInput} style={{cursor:"pointer"}}>
+    <li className="hideOnMobile three" id="" onClick={inputToggle} onBlur={closeInput} style={{cursor:"pointer"}}>
       <FontAwesomeIcon onClick={setInput} icon={faMagnifyingGlass} />
       <input 
+      id="input"
       className='large-input'
       onChange={handleInputChange}
       onKeyUp={handleSearch}
